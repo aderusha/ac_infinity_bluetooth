@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/fragment_log_c_0" android:background="@color/bg" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rc_content" android:layout_width="match_parent" android:layout_height="0dp" android:overScrollMode="never" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <com.eternal.widget.ExpandableLayout android:id="@+id/ume_filter" android:layout_width="match_parent" android:layout_height="wrap_content" app:el_duration="500" app:el_expanded="true" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:orientation="vertical" android:background="@color/row" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dp_12" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:text="FILTERS" android:fontFamily="@font/avenir_heavy"/>
+            <View android:background="@color/line" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginTop="@dimen/dp_14" android:layout_marginBottom="@dimen/dp_9"/>
+            <RelativeLayout android:id="@+id/rl_high_tmp" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="@dimen/dp_30" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16">
+                <TextView android:textSize="@dimen/dp_12" android:textColor="@color/color_FFFFFF" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="HIGH TEMPERATURE ALARM" android:drawablePadding="15dp" android:layout_centerVertical="true" android:fontFamily="@font/avenir_book"/>
+                <ImageView android:tag="binding_2" android:background="@drawable/mode_type_choose_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_low_tmp" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="@dimen/dp_30" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16">
+                <TextView android:textSize="@dimen/dp_12" android:textColor="@color/color_FFFFFF" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LOW TEMPERATURE ALARM" android:drawablePadding="15dp" android:layout_centerVertical="true" android:fontFamily="@font/avenir_book"/>
+                <ImageView android:tag="binding_4" android:background="@drawable/mode_type_choose_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_high_hum" android:tag="binding_5" android:layout_width="match_parent" android:layout_height="@dimen/dp_30" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16">
+                <TextView android:textSize="@dimen/dp_12" android:textColor="@color/color_FFFFFF" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="HIGH HUMIDITY ALARM" android:drawablePadding="15dp" android:layout_centerVertical="true" android:fontFamily="@font/avenir_book"/>
+                <ImageView android:tag="binding_6" android:background="@drawable/mode_type_choose_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_low_hum" android:tag="binding_7" android:layout_width="match_parent" android:layout_height="@dimen/dp_30" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16">
+                <TextView android:textSize="@dimen/dp_12" android:textColor="@color/color_FFFFFF" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LOW HUMIDITY ALARM" android:drawablePadding="15dp" android:layout_centerVertical="true" android:fontFamily="@font/avenir_book"/>
+                <ImageView android:tag="binding_8" android:background="@drawable/mode_type_choose_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <View android:background="@color/line" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginTop="@dimen/dp_12"/>
+            <RelativeLayout android:id="@+id/btn_delete" android:tag="binding_9" android:background="@color/row" android:layout_width="match_parent" android:layout_height="@dimen/dp_100">
+                <TextView android:textSize="@dimen/dp_12" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DELETE HISTORY LOGS" android:layout_centerVertical="true" android:fontFamily="@font/avenir_book" android:layout_marginStart="@dimen/dp_16"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/delete" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.eternal.widget.ExpandableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

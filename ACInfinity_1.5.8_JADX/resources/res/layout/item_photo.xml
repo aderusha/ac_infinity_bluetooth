@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/item_photo_0" android:layout_width="@dimen/dp_61" android:layout_height="@dimen/dp_81">
+    <ImageView android:tag="binding_1" android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_50" android:layout_marginTop="@dimen/dp_17" android:scaleType="centerCrop" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:placeholderRes="@mipmap/photo_placeholder"/>
+    <ImageView android:tag="binding_2" android:padding="@dimen/dp_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:src="@mipmap/delete_photo" android:layout_marginEnd="@dimen/dp_2" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

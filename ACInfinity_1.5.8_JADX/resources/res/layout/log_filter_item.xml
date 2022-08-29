@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rl_time_to_off" android:layout_width="match_parent" android:layout_height="@dimen/dp_30">
+    <ImageView android:background="@drawable/mode_type_choose_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_16"/>
+    <TextView android:textSize="@dimen/dp_12" android:textColor="@color/color_FFFFFF" android:gravity="center_vertical" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MODES" android:layout_centerVertical="true" android:fontFamily="@font/avenir_book" android:layout_marginStart="@dimen/dp_52"/>
+</RelativeLayout>

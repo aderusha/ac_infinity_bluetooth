@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/fragment_history_0" android:background="@color/bg" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rc_content" android:layout_width="match_parent" android:layout_height="0dp" android:overScrollMode="never" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <com.eternal.widget.ExpandableLayout android:id="@+id/ume_filter" android:layout_width="match_parent" android:layout_height="wrap_content" app:el_duration="500" app:el_expanded="false" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:orientation="vertical" android:background="@color/row" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dp_12" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:text="FILTERS" android:fontFamily="@font/avenir_heavy"/>
+            <View android:background="@color/line" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginTop="@dimen/dp_14" android:layout_marginBottom="@dimen/dp_9"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_row_1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_row_2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <View android:background="@color/line" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginTop="@dimen/dp_12"/>
+            <RelativeLayout android:id="@+id/btn_delete" android:tag="binding_1" android:background="@color/row" android:layout_width="match_parent" android:layout_height="@dimen/dp_100">
+                <TextView android:textSize="@dimen/dp_12" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DELETE HISTORY LOGS" android:layout_centerVertical="true" android:fontFamily="@font/avenir_book" android:layout_marginStart="@dimen/dp_16"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/delete" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.eternal.widget.ExpandableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

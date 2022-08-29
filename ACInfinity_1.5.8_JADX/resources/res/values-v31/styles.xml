@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme">
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="?0x101062c">@color/bg</item>
+        <item name="?0x101062d">@mipmap/ic_splash_logo</item>
+        <item name="?0x101062e">1000</item>
+        <item name="?0x101062f">@drawable/ic_ac_infinity</item>
+        <item name="background">@null</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/nav_tab</item>
+        <item name="colorPrimaryDark">@color/nav_tab</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

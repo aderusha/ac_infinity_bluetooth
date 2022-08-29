@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/activity_export_0" android:background="@color/bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.eternal.widget.guqiang.Toolbar android:id="@+id/toolbar" android:tag="binding_1" android:background="@color/nav_tab" android:layout_width="match_parent" android:layout_height="@dimen/dp_56" app:backRes="@drawable/add_device_back_selector" app:layout_constraintTop_toTopOf="0" app:title="CSV EXPORT"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:overScrollMode="never" app:layout_constraintBottom_toTopOf="@+id/btn_confirm" app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/dp_50" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dp_12" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_29" android:text="SELECT A SAMPLE FREQUENCY" android:fontFamily="@font/avenir_medium" android:layout_marginStart="@dimen/dp_16"/>
+            <LinearLayout android:orientation="vertical" android:background="@color/row" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_11">
+                <TextView android:textSize="@dimen/dp_12" android:textColor="@color/white" android:id="@+id/tv_frequency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_35" android:text="FREQUENCY" android:fontFamily="@font/avenir_book" android:layout_marginStart="@dimen/dp_16"/>
+                <RadioGroup android:orientation="horizontal" android:id="@+id/rg_frequency" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_25" android:checkedButton="@+id/frequency_1" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+                    <RadioButton android:id="@+id/frequency_1" android:text="1 MIN" style="@style/BrightnessStyleTop"/>
+                    <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <RadioButton android:id="@+id/frequency_15" android:text="15 MIN" style="@style/BrightnessStyleTop"/>
+                    <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <RadioButton android:id="@+id/frequency_30" android:text="30 MIN" style="@style/BrightnessStyleTop"/>
+                    <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <RadioButton android:id="@+id/frequency_60" android:text="60 MIN" style="@style/BrightnessStyleTop"/>
+                    <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <RadioButton android:id="@+id/frequency_720" android:text="12 HRS" style="@style/BrightnessStyleTop"/>
+                    <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <RadioButton android:id="@+id/frequency_1440" android:text="24 HRS" style="@style/BrightnessStyleTop"/>
+                </RadioGroup>
+                <TextView android:textSize="@dimen/dp_12" android:textColor="@color/color_BFBFBF" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_25" android:layout_marginBottom="@dimen/dp_35" android:text="Samples are recorded once per minute. " android:fontFamily="@font/avenir_book" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/dp_12" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_29" android:text="SELECT A TIME SPAN" android:fontFamily="@font/avenir_medium" android:layout_marginStart="@dimen/dp_16"/>
+            <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@color/row" android:paddingBottom="@dimen/dp_30" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_11">
+                <TextView android:textSize="@dimen/dp_12" android:textColor="@color/white" android:id="@+id/tv_start_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_30" android:text="START TIME" android:fontFamily="@font/avenir_book" android:layout_marginStart="@dimen/dp_16" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_40" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="@+id/ll_start_time">
+                    <View android:background="@drawable/sched_time_5_shape" android:layout_width="0dp" android:layout_height="@dimen/dp_40" android:layout_weight="180" android:alpha="0.52" android:layout_marginEnd="@dimen/dp_28"/>
+                    <View android:background="@drawable/sched_time_5_shape" android:layout_width="0dp" android:layout_height="@dimen/dp_40" android:layout_weight="164" android:alpha="0.52"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_start_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_26" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_4" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/tv_start_time">
+                    <com.zyyoona7.wheel.WheelView android:id="@+id/wv_start_month" android:layout_width="0dp" android:layout_height="@dimen/dp_120" android:layout_weight="1"/>
+                    <com.zyyoona7.wheel.WheelView android:id="@+id/wv_start_day" android:layout_width="0dp" android:layout_height="@dimen/dp_120" android:layout_weight="1"/>
+                    <com.zyyoona7.wheel.WheelView android:id="@+id/wv_start_year" android:layout_width="0dp" android:layout_height="@dimen/dp_120" android:layout_weight="1"/>
+                    <View android:layout_width="@dimen/dp_26" android:layout_height="@dimen/dp_120"/>
+                    <com.zyyoona7.wheel.WheelView android:id="@+id/wv_start_hour" android:layout_width="0dp" android:layout_height="@dimen/dp_120" android:layout_weight="1"/>
+                    <TextView android:textSize="@dimen/dp_22" android:textColor="@color/color_15BAFF" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_43" android:text=":"/>
+                    <com.zyyoona7.wheel.WheelView android:id="@+id/wv_start_min" android:layout_width="0dp" android:layout_height="@dimen/dp_120" android:layout_weight="1"/>
+                    <com.zyyoona7.wheel.WheelView android:id="@+id/wv_start_am_pm" android:layout_width="0dp" android:layout_height="@dimen/dp_120" android:layout_weight="1"/>
+                </LinearLayout>
+                <View android:id="@+id/v_line" android:background="@color/line" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5" android:layout_marginTop="@dimen/dp_31" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/ll_start_time"/>
+                <TextView android:textSize="@dimen/dp_12" android:textColor="@color/white" android:id="@+id/tv_end_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_30" android:text="END TIME" android:fontFamily="@font/avenir_book" android:layout_marginStart="@dimen/dp_16" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/v_line"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_40" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="@+id/ll_end_time">
+                    <View android:background="@drawable/sched_time_5_shape" android:layout_width="0dp" android:layout_height="@dimen/dp_40" android:layout_weight="180" android:alpha="0.52" android:layout_marginEnd="@dimen/dp_28"/>
+                    <View android:background="@drawable/sched_time_5_shape" android:layout_width="0dp" android:layout_height="@dimen/dp_40" android:layout_weight="164" android:alpha="0.52"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_end_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_26" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_4" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/tv_end_time">
+                    <com.zyyoona7.wheel.WheelView android:id="@+id/wv_end_month" android:layout_width="0dp" android:layout_height="@dimen/dp_120" android:layout_weight="1"/>
+                    <com.zyyoona7.wheel.WheelView android:id="@+id/wv_end_day" android:layout_width="0dp" android:layout_height="@dimen/dp_120" android:layout_weight="1"/>
+                    <com.zyyoona7.wheel.WheelView android:id="@+id/wv_end_year" android:layout_width="0dp" android:layout_height="@dimen/dp_120" android:layout_weight="1"/>
+                    <View android:layout_width="@dimen/dp_26" android:layout_height="@dimen/dp_120"/>
+                    <com.zyyoona7.wheel.WheelView android:id="@+id/wv_end_hour" android:layout_width="0dp" android:layout_height="@dimen/dp_120" android:layout_weight="1"/>
+                    <TextView android:textSize="@dimen/dp_22" android:textColor="@color/color_FF6A6A" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_43" android:text=":"/>
+                    <com.zyyoona7.wheel.WheelView android:id="@+id/wv_end_min" android:layout_width="0dp" android:layout_height="@dimen/dp_120" android:layout_weight="1"/>
+                    <com.zyyoona7.wheel.WheelView android:id="@+id/wv_end_am_pm" android:layout_width="0dp" android:layout_height="@dimen/dp_120" android:layout_weight="1"/>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:textSize="@dimen/dp_14" android:textColor="@color/white" android:id="@+id/btn_confirm" android:tag="binding_3" android:background="@drawable/create_account_gradient" android:layout_width="match_parent" android:layout_height="@dimen/dp_55" android:text="EXPORT CSV DATA" android:fontFamily="@font/avenir_heavy" android:stateListAnimator="@null" app:layout_constraintBottom_toBottomOf="0"/>
+    <TextView android:textSize="@dimen/dp_11" android:textColor="@color/white" android:gravity="center" android:id="@+id/txt_connect_time" android:tag="binding_4" android:background="@color/color_FF6A6A" android:layout_width="match_parent" android:layout_height="@dimen/dp_25" android:fontFamily="@font/avenir_medium" app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

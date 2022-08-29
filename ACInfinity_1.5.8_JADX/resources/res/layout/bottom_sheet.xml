@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/rectang_14_242425_shape" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8">
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/color_8F8F8F" android:gravity="center" android:layout_width="match_parent" android:layout_height="@dimen/dp_45" android:text="DELETE" android:fontFamily="@font/avenir_heavy"/>
+        <View android:background="@color/line" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5"/>
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/color_FFFFFF" android:gravity="center" android:id="@+id/tv_1_hours" android:layout_width="match_parent" android:layout_height="@dimen/dp_56" android:text="Older than 1 Hour" android:fontFamily="@font/avenir_book"/>
+        <View android:background="@color/line" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5"/>
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/color_FFFFFF" android:gravity="center" android:id="@+id/tv_24_hours" android:layout_width="match_parent" android:layout_height="@dimen/dp_56" android:text="Older than 24 Hour " android:fontFamily="@font/avenir_book"/>
+        <View android:background="@color/line" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5"/>
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/color_FFFFFF" android:gravity="center" android:id="@+id/tv_7_days" android:layout_width="match_parent" android:layout_height="@dimen/dp_56" android:text="Older than 7 Days" android:fontFamily="@font/avenir_book"/>
+        <View android:background="@color/line" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5"/>
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/color_FFFFFF" android:gravity="center" android:id="@+id/tv_4_weeks" android:layout_width="match_parent" android:layout_height="@dimen/dp_56" android:text="Older than 4 Weeks" android:fontFamily="@font/avenir_book"/>
+        <View android:background="@color/line" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5"/>
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/color_1DABF1" android:gravity="center" android:id="@+id/tv_delete_all" android:layout_width="match_parent" android:layout_height="@dimen/dp_56" android:text="Delete All" android:fontFamily="@font/avenir_book"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/dp_14" android:textColor="@color/color_FFFFFF" android:gravity="center" android:id="@+id/tv_cancel" android:background="@drawable/rectang_28_1dbaf1_shape" android:layout_width="match_parent" android:layout_height="@dimen/dp_56" android:layout_marginTop="@dimen/dp_7" android:text="@string/tip_cancel" android:fontFamily="@font/avenir_heavy" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8"/>
+</LinearLayout>

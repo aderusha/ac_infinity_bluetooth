@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/control_icon_selector" android:id="@+id/menu_control" android:visible="true" android:title="" app:showAsAction="always"/>
+    <item android:icon="@drawable/advance_icon_selector" android:id="@+id/menu_advance" android:title="" app:showAsAction="always"/>
+    <item android:icon="@drawable/datapage_icon_selector" android:id="@+id/menu_data" android:title="" app:showAsAction="always"/>
+    <item android:icon="@drawable/history_icon_selector" android:id="@+id/menu_log" android:title="" app:showAsAction="always"/>
+</menu>

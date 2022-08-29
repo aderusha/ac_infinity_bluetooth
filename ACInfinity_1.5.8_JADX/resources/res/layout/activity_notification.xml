@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/root" android:background="@color/bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.eternal.widget.guqiang.ProgressToolbar android:id="@+id/toolbar" android:background="@color/nav_tab" android:layout_width="match_parent" android:layout_height="@dimen/dp_56" app:backRes="@drawable/add_device_back_selector" app:layout_constraintTop_toTopOf="0" app:nextTitle="@string/tip_cancel_lowercase"/>
+    <ScrollView android:id="@+id/scrollView" android:layout_width="match_parent" android:layout_height="0dp" android:overScrollMode="never" app:layout_constraintBottom_toTopOf="@+id/btn_confirm" app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <FrameLayout android:id="@+id/layout_content" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </ScrollView>
+    <Button android:textSize="@dimen/dp_14" android:textColor="@color/white" android:id="@+id/btn_confirm" android:background="@drawable/create_account_gradient" android:layout_width="match_parent" android:layout_height="@dimen/dp_55" android:text="@string/tip_confirm" android:fontFamily="@font/avenir_heavy" android:stateListAnimator="@null" app:layout_constraintBottom_toBottomOf="0"/>
+    <TextView android:textSize="@dimen/dp_11" android:textColor="@color/white" android:gravity="center" android:id="@+id/txt_connect_time" android:background="@color/color_FF6A6A" android:layout_width="match_parent" android:layout_height="@dimen/dp_25" android:fontFamily="@font/avenir_medium" app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/rectang_10_1e1e1e_shape" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/dp_18" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:text="@string/tip_exit_add_device" android:fontFamily="@font/avenir_medium" android:layout_marginStart="@dimen/dp_17" android:layout_marginEnd="@dimen/dp_17"/>
+        <TextView android:textSize="@dimen/dp_15" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:text="@string/tip_exit_add_device_desc" android:layout_below="@+id/tv_title" android:fontFamily="@font/avenir_book" android:layout_marginStart="@dimen/dp_17" android:layout_marginEnd="@dimen/dp_17"/>
+    </RelativeLayout>
+    <View android:background="@color/color_a6545458" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5" android:layout_marginTop="@dimen/dp_40"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/dp_15" android:textStyle="bold" android:textColor="#ff0a84ff" android:gravity="center" android:id="@+id/tv_confirm" android:background="@drawable/bg_clicl_cancle_right" android:layout_width="match_parent" android:layout_height="@dimen/dp_44" android:text="@string/tip_exit" android:fontFamily="@font/avenir_heavy"/>
+        <View android:background="@color/color_a6545458" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5"/>
+        <TextView android:textSize="@dimen/dp_15" android:textColor="#ff0a84ff" android:gravity="center" android:id="@+id/tv_confirm_second" android:background="@drawable/bg_clicl_cancle_right" android:layout_width="match_parent" android:layout_height="@dimen/dp_44" android:text="@string/tip_exit" android:fontFamily="@font/avenir_heavy"/>
+        <View android:background="@color/color_a6545458" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5"/>
+        <TextView android:textSize="@dimen/dp_15" android:textColor="#ff0a84ff" android:gravity="center" android:id="@+id/tv_cancel" android:background="@drawable/bg_clicl_cancle_lift" android:layout_width="match_parent" android:layout_height="@dimen/dp_44" android:text="@string/tip_do_not_exit" android:fontFamily="@font/avenir_heavy"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:state_pressed="true" android:drawable="@drawable/rect_c1cbd8_20"/>
+    <item android:state_selected="true" android:drawable="@drawable/rect_c1cbd8_20"/>
+    <item android:drawable="@drawable/rect_border_c1cbd8_20"/>
+</selector>

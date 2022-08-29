@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root" android:tag="layout/activity_wifi_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_sheet_dialog" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/rectang_14_242425_shape" android:layout_width="match_parent" android:layout_height="@dimen/dp_370" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8">
+            <TextView android:textSize="@dimen/dp_14" android:textColor="@color/color_8F8F8F" android:gravity="center" android:layout_width="match_parent" android:layout_height="@dimen/dp_45" android:text="CHOOSE Wi-Fi NETWORK" android:fontFamily="@font/avenir_heavy"/>
+            <View android:background="@color/line" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5"/>
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <androidx.recyclerview.widget.RecyclerView android:tag="binding_2" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/color_FFFFFF" android:gravity="center" android:id="@+id/tv_cancel" android:tag="binding_3" android:background="@drawable/rectang_28_1dbaf1_shape" android:layout_width="match_parent" android:layout_height="@dimen/dp_56" android:layout_marginTop="@dimen/dp_7" android:text="@string/tip_cancel" android:fontFamily="@font/avenir_heavy" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/bg" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <com.eternal.widget.guqiang.Toolbar android:id="@+id/toolBar" android:tag="binding_4" android:background="@color/nav_tab" android:layout_width="match_parent" android:layout_height="@dimen/dp_44" app:backRes="@drawable/add_device_back_selector" app:nextTitle="@string/nav_cancel" app:title="@string/device_title"/>
+        <RelativeLayout android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:tag="binding_5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_128" android:src="@mipmap/guide_wifi" android:scaleType="centerInside"/>
+            <ImageView android:id="@+id/iv_oval" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_55" android:src="@mipmap/guide_oval" android:scaleType="centerInside" android:layout_centerHorizontal="true"/>
+            <ImageView android:tag="binding_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:layout_alignTop="@+id/iv_oval" android:layout_alignBottom="@+id/iv_oval" android:layout_alignStart="@+id/iv_oval" android:layout_alignEnd="@+id/iv_oval"/>
+            <TextView android:textSize="@dimen/dp_15" android:textColor="@android:color/white" android:id="@+id/tv_title" android:tag="binding_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_21" android:layout_above="@+id/ll_content" android:layout_centerHorizontal="true" android:fontFamily="@font/avenir_heavy"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_149" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <ImageView android:tag="binding_9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/wifi" android:layout_marginEnd="@dimen/dp_4"/>
+                <TextView android:textSize="@dimen/dp_14" android:textColor="#fff1f1f1" android:gravity="center" android:id="@+id/tv_content" android:tag="binding_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/avenir_book"/>
+            </LinearLayout>
+            <Button android:textSize="@dimen/dp_14" android:textColor="@color/white" android:id="@+id/ib_next" android:tag="binding_11" android:background="@drawable/create_account_gradient" android:layout_width="match_parent" android:layout_height="@dimen/dp_55" android:layout_alignParentBottom="true" android:fontFamily="@font/avenir_heavy" android:stateListAnimator="@null"/>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

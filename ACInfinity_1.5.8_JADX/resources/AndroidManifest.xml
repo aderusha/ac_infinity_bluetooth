@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="41" android:versionName="1.5.8" android:compileSdkVersion="31" android:compileSdkVersionCodename="12" package="com.eternal.acinfinity" platformBuildVersionCode="31" platformBuildVersionName="12">
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="31"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" android:usesPermissionFlags="10000"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-feature android:name="android.software.companion_device_setup" android:required="false"/>
+    <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/default_notification_icon"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:name="com.eternal.base.Application" android:allowBackup="true" android:supportsRtl="true" android:usesCleartextTraffic="true" android:roundIcon="@mipmap/ic_launcher_round" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:isSplitRequired="true">
+        <activity android:name="com.eternal.start.StartActivity" android:exported="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.eternal.main.MainActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.eternal.about.AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.eternal.device.DeviceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.eternal.device.DeviceWiFiActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.eternal.device.ChooseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.eternal.device.PromptActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.eternal.device.GuideActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.eternal.device.WiFiActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.eternal.device.WiFiListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.eternal.device.WiFiConnectActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.eternal.device.WiFiSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.eternal.device.HelpActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.eternal.device.LocationPermissionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.eternal.details.DetailsActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.eternal.settings.SettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.eternal.notification.p008ui.NotificationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.eternal.notification.ui.SelectAutomationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.eternal.export.ExportActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.eternal.account.PreferencesActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.eternal.account.VerifyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.eternal.account.CreateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.eternal.account.AccountActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.eternal.account.ExistActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.eternal.account.LoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.eternal.account.SupportActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.eternal.account.TechnicalGuidesActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.eternal.account.VersionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.eternal.account.FirmwareUpdateActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.eternal.account.ShareActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.eternal.account.InviteActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.eternal.account.TimeZoneActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.eternal.account.SearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.eternal.account.ResetPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.eternal.account.ChangePasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.eternal.account.LegalInformationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.eternal.account.FeedbackActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <service android:name="com.eternal.account.DfuService" android:exported="false"/>
+        <activity android:name="com.eternal.account.NotificationActivity" android:noHistory="true"/>
+        <provider android:name="androidx.core.content.FileProvider" android:exported="false" android:authorities="com.eternal.acinfinity.fileProvider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <activity android:name="com.eternal.framework.component.ContainerActivity" android:screenOrientation="sensorPortrait" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:name="com.eternal.framework.crash.DefaultErrorActivity" android:process=":error_activity"/>
+        <provider android:name="com.eternal.framework.crash.CaocInitProvider" android:exported="false" android:authorities="com.eternal.acinfinity.customactivityoncrashinitprovider" android:initOrder="101"/>
+        <activity android:name="com.zhihu.matisse.p013ui.MatisseActivity"/>
+        <activity android:name="com.zhihu.matisse.internal.p012ui.AlbumPreviewActivity"/>
+        <activity android:name="com.zhihu.matisse.internal.p012ui.SelectedPreviewActivity"/>
+        <provider android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" android:exported="false" android:multiprocess="true" android:authorities="com.eternal.acinfinity.lifecycle-process"/>
+        <activity android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" android:enabled="false" android:exported="false" android:process=":playcore_missing_splits_activity" android:stateNotNeeded="true" android:launchMode="singleInstance"/>
+        <activity android:theme="@style/Theme.PlayCore.Transparent" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:exported="false" android:stateNotNeeded="true"/>
+        <service android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService" android:enabled="false" android:exported="true">
+            <meta-data android:name="com.google.android.play.core.assetpacks.versionCode" android:value="11003"/>
+        </service>
+        <service android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService" android:enabled="false" android:exported="false"/>
+        <service android:name="androidx.room.MultiInstanceInvalidationService" android:exported="false" android:directBootAware="true"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:value="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+    </application>
+</manifest>

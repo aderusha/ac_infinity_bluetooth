@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/rectang_10_ffffff_shape" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="17sp" android:textColor="#202020" android:gravity="center" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="56dp" android:text="Select an option:"/>
+    <View android:background="@color/color_EDEDEE" android:layout_width="match_parent" android:layout_height="2dp"/>
+    <TextView android:textSize="17sp" android:textColor="#ff3b30" android:gravity="center" android:id="@+id/tv_confirm" android:layout_width="match_parent" android:layout_height="56dp" android:text="Delete"/>
+    <View android:background="@color/color_EDEDEE" android:layout_width="match_parent" android:layout_height="2dp"/>
+    <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="#0076ff" android:gravity="center" android:id="@+id/tv_cancel" android:layout_width="match_parent" android:layout_height="56dp" android:text="Cancel"/>
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/fragment_other_v4_0" android:background="@color/bg" android:paddingBottom="@dimen/dp_50" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/dp_12" android:textColor="@color/color_BFBFBF" android:id="@+id/tv_name_suggest" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_29" android:fontFamily="@font/avenir_roman" android:layout_marginStart="@dimen/dp_16"/>
+    <EditText android:textSize="@dimen/dp_16" android:textColor="@color/color_15BAFF" android:gravity="center_vertical" android:id="@+id/et_edit_name" android:tag="binding_2" android:background="@color/row" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="@dimen/dp_80" android:layout_marginTop="@dimen/dp_11" android:lines="1" android:maxLength="20" android:inputType="text" android:imeOptions="actionDone" android:fontFamily="@font/avenir_medium" android:paddingStart="@dimen/dp_16" android:paddingEnd="0dp"/>
+    <TextView android:textSize="@dimen/dp_12" android:textColor="@color/color_BFBFBF" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_29" android:text="PICK AN PARAMETER ALERT" android:fontFamily="@font/avenir_roman" android:layout_marginStart="@dimen/dp_16"/>
+    <com.eternal.notification.view.TitleSelectView android:id="@+id/tsv_tmp" android:tag="binding_3" android:background="@color/row" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_11" app:noDouble="true"/>
+    <com.eternal.widget.ExpandableLayout android:id="@+id/el_tmp" android:layout_width="match_parent" android:layout_height="wrap_content" app:el_expanded="false">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_tmp_container" android:background="@color/row" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dp_11" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@+id/tv_temp_min" android:layout_width="wrap_content" android:layout_height="@dimen/dp_21" android:fontFamily="@font/avenir_book" android:layout_marginStart="@dimen/dp_32"/>
+                <com.eternal.widget.guqiang.RangeSeekBar android:id="@+id/rsb_temp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10"/>
+                <TextView android:textSize="@dimen/dp_11" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@+id/tv_temp_max" android:layout_width="wrap_content" android:layout_height="@dimen/dp_21" android:text="194°F" android:fontFamily="@font/avenir_book" android:layout_marginEnd="@dimen/dp_32"/>
+            </LinearLayout>
+            <com.eternal.widget.guqiang.DoubleAddLayout android:orientation="vertical" android:id="@+id/layout_tmp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.eternal.widget.guqiang.SingleAddView android:id="@+id/sb_high_tmp" android:layout_width="match_parent" android:layout_height="@dimen/dp_91" app:isMax="true"/>
+                <View android:background="@color/line" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16"/>
+                <com.eternal.widget.guqiang.SingleAddView android:id="@+id/sb_low_tmp" android:layout_width="match_parent" android:layout_height="@dimen/dp_91"/>
+            </com.eternal.widget.guqiang.DoubleAddLayout>
+        </LinearLayout>
+    </com.eternal.widget.ExpandableLayout>
+    <Space android:tag="binding_4" android:layout_width="match_parent" android:layout_height="@dimen/dp_10"/>
+    <View android:tag="binding_5" android:background="@color/line" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5"/>
+    <Space android:tag="binding_6" android:layout_width="match_parent" android:layout_height="@dimen/dp_10"/>
+    <com.eternal.notification.view.TitleSelectView android:id="@+id/mode_hum" android:tag="binding_7" android:background="@color/row" android:layout_width="match_parent" android:layout_height="wrap_content" app:noDouble="true"/>
+    <com.eternal.widget.ExpandableLayout android:id="@+id/el_hum" android:layout_width="match_parent" android:layout_height="wrap_content" app:el_expanded="false">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_hum_container" android:background="@color/row" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dp_11" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@+id/tv_hum_min" android:layout_width="wrap_content" android:layout_height="@dimen/dp_21" android:text="0%" android:fontFamily="@font/avenir_book" android:layout_marginStart="@dimen/dp_32"/>
+                <com.eternal.widget.guqiang.RangeSeekBar android:id="@+id/rsb_hum" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10"/>
+                <TextView android:textSize="@dimen/dp_11" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="@dimen/dp_21" android:text="100%" android:fontFamily="@font/avenir_book" android:layout_marginEnd="@dimen/dp_32"/>
+            </LinearLayout>
+            <com.eternal.widget.guqiang.DoubleAddLayout android:orientation="vertical" android:id="@+id/layout_hum" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.eternal.widget.guqiang.SingleAddView android:id="@+id/sb_high_hum" android:layout_width="match_parent" android:layout_height="@dimen/dp_91" app:distance="100" app:isMax="true"/>
+                <View android:background="@color/line" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16"/>
+                <com.eternal.widget.guqiang.SingleAddView android:id="@+id/sb_low_hum" android:layout_width="match_parent" android:layout_height="@dimen/dp_91" app:distance="100"/>
+            </com.eternal.widget.guqiang.DoubleAddLayout>
+        </LinearLayout>
+    </com.eternal.widget.ExpandableLayout>
+    <Space android:tag="binding_8" android:layout_width="match_parent" android:layout_height="@dimen/dp_10"/>
+    <View android:tag="binding_9" android:background="@color/line" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5"/>
+    <Space android:tag="binding_10" android:layout_width="match_parent" android:layout_height="@dimen/dp_10"/>
+    <com.eternal.notification.view.TitleSelectView android:id="@+id/mode_vpd" android:tag="binding_11" android:background="@color/row" android:layout_width="match_parent" android:layout_height="wrap_content" app:info="@string/alarm_info_vpd_parameter" app:noDouble="true" app:title="@string/title_vpd"/>
+    <com.eternal.widget.ExpandableLayout android:id="@+id/el_vpd" android:layout_width="match_parent" android:layout_height="wrap_content" app:el_expanded="false">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_vpd_container" android:background="@color/row" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dp_12" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="VPD TRIGGER" android:fontFamily="@font/avenir_medium"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dp_11" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@+id/tv_vpd_min" android:layout_width="wrap_content" android:layout_height="@dimen/dp_21" android:text="0.0kPa" android:fontFamily="@font/avenir_book" android:layout_marginStart="@dimen/dp_32"/>
+                <com.eternal.widget.guqiang.RangeSeekBar android:id="@+id/rsb_vpd" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10"/>
+                <TextView android:textSize="@dimen/dp_11" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="@dimen/dp_21" android:text="9.9kPa" android:fontFamily="@font/avenir_book" android:layout_marginEnd="@dimen/dp_32"/>
+            </LinearLayout>
+            <com.eternal.widget.guqiang.DoubleAddLayout android:orientation="vertical" android:id="@+id/layout_vpd" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.eternal.widget.guqiang.SingleAddView android:id="@+id/sb_high_vpd" android:layout_width="match_parent" android:layout_height="@dimen/dp_91" app:isMax="true"/>
+                <View android:background="@color/line" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16"/>
+                <com.eternal.widget.guqiang.SingleAddView android:id="@+id/sb_low_vpd" android:layout_width="match_parent" android:layout_height="@dimen/dp_91"/>
+            </com.eternal.widget.guqiang.DoubleAddLayout>
+        </LinearLayout>
+    </com.eternal.widget.ExpandableLayout>
+    <TextView android:textSize="@dimen/dp_12" android:textColor="@color/color_BFBFBF" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_29" android:text="PICK A TRIGGERED ALERT" android:fontFamily="@font/avenir_roman" android:layout_marginStart="@dimen/dp_16"/>
+    <com.eternal.notification.view.TitleSelectView android:id="@+id/tsv_all_mode" android:tag="binding_12" android:background="@color/row" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_11" app:info="@string/alarm_info_all_mode" app:title="@string/notify_title_all_mode"/>
+    <com.eternal.widget.ExpandableLayout android:id="@+id/el_modes" android:layout_width="match_parent" android:layout_height="wrap_content" app:el_expanded="false">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_modes_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.eternal.notification.view.TitleSelectView android:tag="binding_13" android:background="@color/row" android:layout_width="match_parent" android:layout_height="wrap_content" app:noDouble="true" app:title="PORT 1"/>
+            <com.eternal.notification.view.TitleSelectView android:tag="binding_14" android:background="@color/row" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_0_5" app:noDouble="true" app:title="PORT 2"/>
+            <com.eternal.notification.view.TitleSelectView android:tag="binding_15" android:background="@color/row" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_0_5" app:noDouble="true" app:title="PORT 3"/>
+            <com.eternal.notification.view.TitleSelectView android:tag="binding_16" android:background="@color/row" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_0_5" app:noDouble="true" app:title="PORT 4"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_beep" android:background="@color/row" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="@color/line" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5"/>
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/color_FFFFFF" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_29" android:text="ALARMS" android:fontFamily="@font/avenir_book" android:layout_marginStart="@dimen/dp_16"/>
+                <TextView android:textSize="@dimen/dp_12" android:textColor="@color/color_BFBFBF" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_9" android:text="Sets the number of beeps upon triggering." android:fontFamily="@font/avenir_book" android:layout_marginStart="@dimen/dp_16"/>
+                <RadioGroup android:orientation="horizontal" android:id="@+id/rg_beep" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_19" android:layout_marginBottom="@dimen/dp_28" android:paddingStart="@dimen/dp_30">
+                    <RadioButton android:id="@+id/rb_none" android:text="NONE" android:layout_marginStart="@dimen/dp_16" style="@style/BrightnessStyle"/>
+                    <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+                    <RadioButton android:id="@+id/rb_1" android:text="1 BEEP" style="@style/BrightnessStyle"/>
+                    <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+                    <RadioButton android:id="@+id/rb_3" android:text="3 BEEPS" style="@style/BrightnessStyle"/>
+                    <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+                    <RadioButton android:id="@+id/rb_continuous" android:text="CONTINUOUS" android:layout_marginEnd="@dimen/dp_16" style="@style/BrightnessStyle"/>
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+    </com.eternal.widget.ExpandableLayout>
+    <RelativeLayout android:id="@+id/btn_delete" android:tag="binding_17" android:background="@color/row" android:layout_width="match_parent" android:layout_height="@dimen/dp_100" android:layout_marginTop="@dimen/dp_35">
+        <TextView android:textSize="@dimen/dp_12" android:textColor="@color/white" android:tag="binding_18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:fontFamily="@font/avenir_book" android:layout_marginStart="@dimen/dp_16"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/delete" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</LinearLayout>
