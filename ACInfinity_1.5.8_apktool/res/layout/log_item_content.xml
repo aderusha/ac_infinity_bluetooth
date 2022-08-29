@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/dp_12" android:textColor="@color/color_BFBFBF" android:gravity="center|right" android:id="@id/tv_log_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="7:04 PM — " android:fontFamily="@font/avenir_book" android:layout_marginStart="@dimen/dp_16" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/dp_12" android:textColor="@color/color_BFBFBF" android:gravity="center_vertical" android:id="@id/tv_log_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="ALARM (LOW 13) activated" android:fontFamily="@font/avenir_book" android:layout_marginStart="@dimen/dp_93" android:layout_marginEnd="@dimen/dp_16" android:layout_toEndOf="@id/tv_log_time" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/tv_log_time" />
+</androidx.constraintlayout.widget.ConstraintLayout>

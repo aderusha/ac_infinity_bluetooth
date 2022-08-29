@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_main_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_10" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/dp_12" android:textColor="@color/color_FFFFFF" android:gravity="center" android:id="@id/tv_del" android:tag="binding_1" android:background="@drawable/third_color_bg_shape" android:layout_width="@dimen/dp_61" android:layout_height="0.0dip" android:text="DELETE" android:fontFamily="@font/avenir_heavy" app:layout_constraintBottom_toBottomOf="@id/cl_content" app:layout_constraintLeft_toRightOf="@id/cl_content" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_content" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout android:orientation="vertical" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:background="@drawable/bg_item_header" android:layout_width="fill_parent" android:layout_height="@dimen/dp_63">
+                    <ImageView android:id="@id/iv_type_icon" android:tag="binding_4" android:layout_width="@dimen/dp_34" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_12" />
+                    <TextView android:textSize="@dimen/dp_16" android:ellipsize="end" android:id="@id/tv_device_name" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_centerVertical="true" android:fontFamily="@font/avenir_medium" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_16" android:layout_toStartOf="@id/rl_time" android:layout_toEndOf="@id/iv_type_icon" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/ll_device_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_18" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true">
+                        <ImageView android:layout_gravity="center_vertical" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="@dimen/dp_12" android:scaleType="fitCenter" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_blue_icon" android:tag="binding_7" android:layout_width="wrap_content" android:layout_height="@dimen/dp_12" android:scaleType="fitCenter" android:layout_marginStart="@dimen/dp_4" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_wifi_icon" android:tag="binding_8" android:layout_width="wrap_content" android:layout_height="@dimen/dp_12" android:scaleType="fitCenter" android:layout_marginStart="@dimen/dp_4" />
+                        <TextView android:textSize="@dimen/dp_9" android:layout_gravity="center_vertical" android:id="@id/device_type" android:tag="binding_9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/avenir_book" android:layout_marginStart="@dimen/dp_3" />
+                    </LinearLayout>
+                    <RelativeLayout android:id="@id/rl_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:layout_marginBottom="@dimen/dp_10" android:layout_below="@id/ll_device_type" android:layout_alignEnd="@id/ll_device_type">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="binding_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <ProgressBar android:layout_gravity="center_vertical" android:id="@id/pb_loading" android:layout_width="@dimen/dp_15" android:layout_height="@dimen/dp_15" android:indeterminateDrawable="@drawable/progress_anim" android:indeterminateBehavior="repeat" android:layout_marginEnd="@dimen/dp_6" style="?android:progressBarStyle" />
+                            <TextView android:textSize="@dimen/dp_9" android:textColor="@color/color_BFBFBF" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Loading…" android:fontFamily="@font/avenir_book" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:tag="binding_11" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_gravity="center_vertical" android:tag="binding_12" android:layout_width="wrap_content" android:layout_height="@dimen/dp_12" android:scaleType="fitCenter" />
+                            <TextView android:textSize="@dimen/dp_9" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_time" android:tag="binding_13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/avenir_book" android:layout_marginStart="@dimen/dp_4" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:layout_marginStart="@dimen/dp_14" android:layout_marginEnd="@dimen/dp_14">
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/dp_10" android:textColor="@color/color_BFBFBF" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TEMPERATURE" android:fontFamily="@font/avenir_book" />
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_19">
+                            <TextView android:textSize="@dimen/dp_30" android:gravity="center" android:id="@id/tv_tmp" android:tag="binding_14" android:layout_width="wrap_content" android:layout_height="@dimen/dp_40" android:fontFamily="@font/avenir_book" />
+                            <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/dp_40" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_7" android:layout_toEndOf="@id/tv_tmp">
+                                <TextView android:textSize="@dimen/dp_14" android:id="@id/tv_temp_unit" android:tag="binding_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:layout_centerHorizontal="true" android:fontFamily="@font/avenir_book" />
+                                <ImageView android:id="@id/iv_temp_status" android:tag="binding_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_8" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.21" />
+                    <RelativeLayout android:tag="binding_17" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/dp_10" android:textColor="@color/color_BFBFBF" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="HUMIDITY" android:fontFamily="@font/avenir_book" />
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_19">
+                            <TextView android:textSize="@dimen/dp_30" android:gravity="center" android:id="@id/tv_hum" android:tag="binding_18" android:layout_width="wrap_content" android:layout_height="@dimen/dp_40" android:fontFamily="@font/avenir_book" />
+                            <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/dp_40" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_7" android:layout_toEndOf="@id/tv_hum">
+                                <TextView android:textSize="@dimen/dp_14" android:id="@id/tv_hum_unit" android:tag="binding_19" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="%" android:layout_centerHorizontal="true" android:fontFamily="@font/avenir_book" />
+                                <ImageView android:id="@id/iv_hum_status" android:tag="binding_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_8" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <RelativeLayout android:tag="binding_21" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/dp_10" android:textColor="@color/color_BFBFBF" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="VPD" android:fontFamily="@font/avenir_book" />
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_19">
+                            <TextView android:textSize="@dimen/dp_30" android:gravity="center" android:id="@id/tv_vpd" android:tag="binding_22" android:layout_width="wrap_content" android:layout_height="@dimen/dp_40" android:fontFamily="@font/avenir_book" />
+                            <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/dp_40" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_7" android:layout_toEndOf="@id/tv_vpd">
+                                <TextView android:textSize="@dimen/dp_10" android:id="@id/tv_vpd_unit" android:tag="binding_23" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="kPa" android:layout_centerHorizontal="true" android:fontFamily="@font/avenir_book" />
+                                <ImageView android:id="@id/iv_vpdstatus" android:tag="binding_24" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_8" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <com.eternal.widget.guqiang.ValueRangeSlider android:id="@id/vrs_tmp" android:tag="binding_25" android:layout_width="@dimen/dp_190" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_19" />
+                    <Space android:tag="binding_26" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <RelativeLayout android:tag="binding_27" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/dp_10" android:textColor="@color/color_BFBFBF" android:tag="binding_28" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/avenir_book" />
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_19">
+                            <TextView android:textSize="@dimen/dp_30" android:gravity="center" android:id="@id/tv_wind_speed" android:tag="binding_29" android:layout_width="wrap_content" android:layout_height="@dimen/dp_40" android:fontFamily="@font/avenir_book" />
+                            <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/dp_40" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_7" android:layout_toEndOf="@id/tv_wind_speed">
+                                <ImageView android:id="@id/iv_wind_speed" android:tag="binding_30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_9" android:layout_centerHorizontal="true" />
+                                <ImageView android:id="@id/iv_wind_status" android:tag="binding_31" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_8" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <Space android:tag="binding_32" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <RelativeLayout android:id="@id/rl_power" android:tag="binding_33" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/dp_10" android:textColor="@color/color_BFBFBF" android:id="@id/tv_power" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="STATUS" android:fontFamily="@font/avenir_book" />
+                        <TextView android:textSize="@dimen/dp_24" android:gravity="center" android:tag="binding_34" android:layout_width="wrap_content" android:layout_height="@dimen/dp_32" android:layout_marginTop="@dimen/dp_23" android:fontFamily="@font/avenir_book" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:tag="binding_35" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:layout_marginStart="@dimen/dp_14" android:layout_marginEnd="@dimen/dp_14">
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dp_74">
+                        <TextView android:textSize="@dimen/dp_10" android:textColor="@color/color_BFBFBF" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="HUMIDITY" android:fontFamily="@font/avenir_book" />
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_19">
+                            <TextView android:textSize="@dimen/dp_30" android:gravity="center" android:id="@id/tv_hum_2" android:tag="binding_36" android:layout_width="wrap_content" android:layout_height="@dimen/dp_40" android:fontFamily="@font/avenir_book" />
+                            <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/dp_40" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_7" android:layout_toEndOf="@id/tv_hum_2">
+                                <TextView android:textSize="@dimen/dp_14" android:tag="binding_37" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="%" android:layout_centerHorizontal="true" android:fontFamily="@font/avenir_book" />
+                                <ImageView android:tag="binding_38" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_8" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <com.eternal.widget.guqiang.ValueRangeSlider android:id="@id/vrs_hum" android:tag="binding_39" android:layout_width="@dimen/dp_190" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_19" />
+                </LinearLayout>
+            </LinearLayout>
+            <Space android:tag="binding_40" android:layout_width="wrap_content" android:layout_height="@dimen/dp_19" />
+            <View android:tag="binding_41" android:background="@color/color_4b4b4b" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0_5" android:layout_marginTop="@dimen/dp_4" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+            <com.eternal.widget.ExpandableLayout android:tag="binding_42" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:tag="binding_43" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include android:id="@id/rl_port_all" layout="@layout/layout_port" />
+                    <LinearLayout android:orientation="horizontal" android:tag="binding_44" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:tag="binding_45" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <include android:id="@id/rl_port0" layout="@layout/layout_port" />
+                            <include android:id="@id/rl_port2" layout="@layout/layout_port" />
+                            <include android:id="@id/rl_port4" layout="@layout/layout_port" />
+                            <include android:id="@id/rl_port6" layout="@layout/layout_port" />
+                            <include android:id="@id/rl_port8" layout="@layout/layout_port" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:tag="binding_46" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <include android:id="@id/rl_port1" layout="@layout/layout_port" />
+                            <include android:id="@id/rl_port3" layout="@layout/layout_port" />
+                            <include android:id="@id/rl_port5" layout="@layout/layout_port" />
+                            <include android:id="@id/rl_port7" layout="@layout/layout_port" />
+                            <include android:id="@id/rl_port9" layout="@layout/layout_port" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.eternal.widget.ExpandableLayout>
+            <View android:tag="binding_47" android:background="@color/color_4b4b4b" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0_5" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+            <ImageView android:tag="binding_48" android:background="@drawable/bg_expase_shape" android:layout_width="fill_parent" android:layout_height="@dimen/dp_24" android:scaleType="centerInside" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

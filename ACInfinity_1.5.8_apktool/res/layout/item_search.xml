@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_search_0" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/dp_14" android:textColor="@color/white" android:id="@id/tv_name" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/avenir_book" android:layout_marginStart="@dimen/dp_16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/dp_12" android:textColor="@color/white" android:id="@id/tv_desc" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/avenir_book" android:layout_marginEnd="@dimen/dp_16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

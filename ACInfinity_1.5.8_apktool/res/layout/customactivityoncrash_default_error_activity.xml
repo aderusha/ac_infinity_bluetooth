@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/customactivityoncrash_activity_horizontal_margin" android:paddingTop="@dimen/customactivityoncrash_activity_vertical_margin" android:paddingRight="@dimen/customactivityoncrash_activity_horizontal_margin" android:paddingBottom="@dimen/customactivityoncrash_activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/customactivityoncrash_error_activity_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_91" android:contentDescription="@null" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/customactivityoncrash_activity_vertical_margin" android:text="@string/customactivityoncrash_error_activity_error_occurred_explanation" />
+            <Button android:id="@id/customactivityoncrash_error_activity_restart_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/customactivityoncrash_activity_vertical_margin" android:text="@string/customactivityoncrash_error_activity_close_app" />
+            <Button android:textColor="?colorPrimary" android:id="@id/customactivityoncrash_error_activity_more_info_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/customactivityoncrash_error_activity_error_details" style="?borderlessButtonStyle" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

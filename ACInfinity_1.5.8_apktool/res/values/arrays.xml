@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="details_title">
+        <item>CONTROLS</item>
+        <item>ADVANCE</item>
+        <item>DATA</item>
+        <item>HISTORY LOGS</item>
+    </string-array>
+    <array name="in_colors_light">
+        <item>#4b03a9f4</item>
+        <item>#3303a9f4</item>
+        <item>#1903a9f4</item>
+    </array>
+    <array name="initial_slider_values">
+        <item>20.0</item>
+        <item>70.0</item>
+    </array>
+    <string-array name="markArray">
+        <item>0</item>
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+        <item>100</item>
+    </string-array>
+    <string-array name="markArray2">
+        <item>-1</item>
+        <item>-0.5</item>
+        <item>0.1</item>
+        <item>0.5</item>
+        <item>0.9</item>
+    </string-array>
+    <string-array name="markArray3">
+        <item>商家接单</item>
+        <item>骑手到店</item>
+        <item>配送中</item>
+        <item>已送达</item>
+    </string-array>
+    <string-array name="markArray4">
+        <item>0</item>
+        <item>25</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+    </string-array>
+    <string-array name="markArray5">
+        <item>10</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="negativeMarkArray">
+        <item>-100</item>
+        <item>中间</item>
+        <item>0</item>
+        <item>中间</item>
+        <item>100</item>
+    </string-array>
+    <string-array name="wordsArray">
+        <item>Lv1</item>
+        <item>Lv2</item>
+        <item>Lv3</item>
+        <item>Lv4</item>
+        <item>Lv5</item>
+    </string-array>
+</resources>

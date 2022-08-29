@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/item_bg_selector" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_image" android:layout_width="@dimen/dp_19" android:layout_height="@dimen/dp_19" android:layout_marginStart="@dimen/dp_12" />
+    <TextView android:textSize="@dimen/dp_12" android:textColor="@color/item_port_name_color_selector" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_title" android:layout_width="@dimen/dp_76" android:layout_height="wrap_content" android:text="Port 1" android:maxLines="1" android:fontFamily="@font/avenir_medium" android:layout_marginStart="@dimen/dp_2" android:layout_marginEnd="@dimen/dp_6" />
+</LinearLayout>

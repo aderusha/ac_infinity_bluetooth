@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/dp_12" android:textColor="@color/white" android:id="@id/tv_mode_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_35" android:text="" android:fontFamily="@font/avenir_book" android:layout_marginStart="@dimen/dp_16" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/iv_next" android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_44" android:src="@mipmap/next_page" android:scaleType="centerInside" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/dp_12" android:textColor="@color/color_BFBFBF" android:id="@id/tv_mode_type_des" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_25" android:layout_marginBottom="@dimen/dp_35" android:text="" android:fontFamily="@font/avenir_book" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/iv_next" app:layout_constraintStart_toStartOf="@id/tv_mode_type" app:layout_constraintTop_toBottomOf="@id/tv_mode_type" />
+</merge>

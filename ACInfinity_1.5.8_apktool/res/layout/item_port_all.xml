@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/item_bg_selector" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/dp_12" android:textColor="@color/item_port_name_color_selector" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_title" android:layout_width="@dimen/dp_63" android:layout_height="wrap_content" android:text="All" android:maxLines="1" android:fontFamily="@font/avenir_medium" android:layout_marginStart="@dimen/dp_6" android:layout_marginEnd="@dimen/dp_6" />
+    </LinearLayout>
+    <View android:background="@color/line" android:layout_width="@dimen/dp_1" android:layout_height="fill_parent" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_4" />
+</LinearLayout>

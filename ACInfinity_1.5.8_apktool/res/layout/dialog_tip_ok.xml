@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/rectang_10_ffffff_shape" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dp_17" android:textColor="#ff202020" android:gravity="center" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="Sorry!" android:fontFamily="@font/avenir_medium" />
+    <TextView android:textColor="#ff202020" android:gravity="center" android:id="@id/tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="That name has already been taken." android:fontFamily="@font/avenir_book" android:layout_marginStart="35.0dip" android:layout_marginEnd="35.0dip" />
+    <View android:background="@color/color_EDEDEE" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="20.0dip" />
+    <TextView android:textSize="@dimen/dp_15" android:textColor="#ff0076ff" android:gravity="center" android:id="@id/tv_confirm" android:layout_width="fill_parent" android:layout_height="56.0dip" android:text="OK" android:fontFamily="@font/avenir_heavy" />
+</LinearLayout>

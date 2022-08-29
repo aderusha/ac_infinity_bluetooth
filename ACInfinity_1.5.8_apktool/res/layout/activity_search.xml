@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:tag="layout/activity_search_0" android:background="@color/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.eternal.widget.guqiang.ProgressToolbar android:id="@id/toolBar" android:tag="binding_1" android:background="@color/nav_tab" android:layout_width="fill_parent" android:layout_height="@dimen/dp_45" app:backRes="@drawable/add_device_back_selector" app:singleTitle="true" app:title="TIME ZONE" />
+    <EditText android:textSize="@dimen/dp_15" android:textColor="@color/white" android:textColorHint="@color/color_99EBEBF5" android:gravity="center_vertical" android:id="@id/et_key" android:tag="binding_2" android:background="@drawable/rectang_5_3d767680_shape" android:layout_width="fill_parent" android:layout_height="@dimen/dp_36" android:layout_marginTop="@dimen/dp_5" android:layout_marginBottom="@dimen/dp_5" android:hint="Search" android:maxLength="20" android:inputType="text" android:textCursorDrawable="@drawable/edit_text_bg" android:fontFamily="@font/avenir_book" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+    <com.eternal.base.SlideRecyclerView android:id="@id/srv_with_you" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:overScrollMode="never" />
+</LinearLayout>

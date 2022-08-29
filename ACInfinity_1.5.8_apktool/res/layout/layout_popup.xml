@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/dp_2" android:paddingBottom="@dimen/dp_2" android:layout_width="@dimen/dp_83" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dp_12" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_zoom" android:background="@drawable/bg_item_time" android:clickable="false" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:text="Zoom" android:fontFamily="@font/avenir_heavy" />
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0_5" />
+    <TextView android:textSize="@dimen/dp_12" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_hour" android:background="@drawable/bg_item_time" android:layout_width="fill_parent" android:layout_height="@dimen/dp_32" android:text="Hour" android:fontFamily="@font/avenir_heavy" />
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0_5" />
+    <TextView android:textSize="@dimen/dp_12" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_day" android:background="@drawable/bg_item_time" android:layout_width="fill_parent" android:layout_height="@dimen/dp_32" android:text="Day" android:fontFamily="@font/avenir_heavy" />
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0_5" />
+    <TextView android:textSize="@dimen/dp_12" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_week" android:background="@drawable/bg_item_time" android:layout_width="fill_parent" android:layout_height="@dimen/dp_32" android:text="Week" android:fontFamily="@font/avenir_heavy" />
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0_5" />
+    <TextView android:textSize="@dimen/dp_12" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_month" android:background="@drawable/bg_item_time" android:layout_width="fill_parent" android:layout_height="@dimen/dp_32" android:text="Month" android:fontFamily="@font/avenir_heavy" />
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0_5" />
+    <TextView android:textSize="@dimen/dp_12" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_year" android:background="@drawable/bg_item_time" android:layout_width="fill_parent" android:layout_height="@dimen/dp_32" android:text="Year" android:fontFamily="@font/avenir_heavy" />
+</LinearLayout>

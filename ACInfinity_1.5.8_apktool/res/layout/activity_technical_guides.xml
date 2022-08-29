@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/activity_technical_guides_0" android:background="@color/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.eternal.widget.guqiang.Toolbar android:id="@id/toolBar" android:tag="binding_1" android:background="@color/nav_tab" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44" app:backRes="@drawable/add_device_back_selector" app:title="@string/technical_guides_title" />
+    <RelativeLayout android:tag="binding_2" android:background="@color/row" android:layout_width="fill_parent" android:layout_height="@dimen/dp_90">
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ac Infinity Ecosystem" android:layout_centerVertical="true" android:fontFamily="@font/avenir_book" android:layout_marginStart="@dimen/dp_16" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/external_link" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_27" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:background="@color/color_a6545458" android:layout_width="fill_parent" android:layout_height="@dimen/dp_1" />
+    <RelativeLayout android:tag="binding_3" android:background="@color/row" android:layout_width="fill_parent" android:layout_height="@dimen/dp_90">
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Controller Programming" android:layout_centerVertical="true" android:fontFamily="@font/avenir_book" android:layout_marginStart="@dimen/dp_16" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/external_link" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_27" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:background="@color/color_a6545458" android:layout_width="fill_parent" android:layout_height="@dimen/dp_1" />
+    <RelativeLayout android:tag="binding_4" android:background="@color/row" android:layout_width="fill_parent" android:layout_height="@dimen/dp_90">
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Growing Guide" android:layout_centerVertical="true" android:fontFamily="@font/avenir_book" android:layout_marginStart="@dimen/dp_16" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/external_link" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_27" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:background="@color/color_a6545458" android:layout_width="fill_parent" android:layout_height="@dimen/dp_1" />
+    <RelativeLayout android:tag="binding_5" android:background="@color/row" android:layout_width="fill_parent" android:layout_height="@dimen/dp_90">
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Using the AC Infinity App" android:layout_centerVertical="true" android:fontFamily="@font/avenir_book" android:layout_marginStart="@dimen/dp_16" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/external_link" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_27" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:background="@color/color_a6545458" android:layout_width="fill_parent" android:layout_height="@dimen/dp_1" />
+    <RelativeLayout android:tag="binding_6" android:background="@color/row" android:layout_width="fill_parent" android:layout_height="@dimen/dp_90">
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="FAQ" android:layout_centerVertical="true" android:fontFamily="@font/avenir_book" android:layout_marginStart="@dimen/dp_16" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/external_link" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_27" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:background="@color/color_a6545458" android:layout_width="fill_parent" android:layout_height="@dimen/dp_1" />
+</LinearLayout>
